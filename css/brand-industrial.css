@@ -81,7 +81,15 @@
   font-size: var(--text-xl);
 }
 
-/* Positioning formula band */
+.position-formula__actions {
+  margin-top: var(--space-5);
+}
+
+.position-formula__actions .btn--outline-light {
+  border-color: rgba(244, 246, 241, 0.45);
+  color: var(--color-off-white);
+}
+
 .position-formula {
   background: var(--color-industrial-navy);
   color: var(--color-off-white);
