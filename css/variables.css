@@ -98,8 +98,8 @@
   --space-9: 6rem;
   --space-10: 8rem;
 
-  /* Layout */
-  --container-max: 75rem; /* 1200px */
+  /* Layout — one content column (logo ↔ header RFQ), site-wide */
+  --container-max: 87.5rem; /* 1400px — matches header */
   --container-wide: 87.5rem; /* 1400px */
   --container-narrow: 42rem;
   --gutter: 1.5rem;

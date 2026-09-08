@@ -105,10 +105,7 @@
   width: 100%;
   padding-block: var(--space-9) var(--space-8);
   text-align: start;
-  /* Sit between the old centered 44rem column and the full header width —
-     reduce left empty space without flushing to the logo edge. */
-  max-width: 81.25rem; /* 1300px */
-  margin-inline: auto;
+  /* Same column as header (logo ↔ RFQ) via .container */
 }
 
 .hero__content > .hero__eyebrow,
@@ -117,17 +114,6 @@
 .hero__content > .hero__lead,
 .hero__content > .hero__actions {
   max-width: 34rem;
-}
-
-@media (min-width: 1100px) {
-  .hero__content.container {
-    /* Pull the content column slightly toward the header’s left edge */
-    margin-inline-start: max(
-      var(--gutter),
-      calc((100vw - var(--container-wide)) / 2)
-    );
-    margin-inline-end: auto;
-  }
 }
 
 .hero__eyebrow {
