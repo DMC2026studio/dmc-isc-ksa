@@ -3,7 +3,7 @@
 .container {
   width: 100%;
   max-width: var(--container-max);
-  margin-inline: auto;
+  margin-inline: 0;
   padding-inline: var(--gutter);
 }
 
@@ -13,6 +13,7 @@
 
 .container--narrow {
   max-width: var(--container-narrow);
+  margin-inline: auto;
 }
 
 .section {

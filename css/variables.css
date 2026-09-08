@@ -98,12 +98,12 @@
   --space-9: 6rem;
   --space-10: 8rem;
 
-  /* Layout — one content column (logo ↔ header RFQ), site-wide */
-  --container-max: 87.5rem; /* 1400px — matches header */
-  --container-wide: 87.5rem; /* 1400px */
+  /* Layout — full-width with fixed viewport side insets */
+  --container-max: none;
+  --container-wide: none;
   --container-narrow: 42rem;
-  --gutter: 40px; /* site-wide side inset */
-  --hero-gutter: 120px; /* hero copy side inset */
+  --gutter: 40px; /* site-wide side inset from viewport */
+  --hero-gutter: 120px; /* hero copy side inset from viewport */
   --header-height: 5.5rem;
   --header-height-sticky: 5rem;
 

@@ -107,13 +107,13 @@
   text-align: start;
 }
 
-/* 80px side margins on home + inner-page heroes (full-bleed media stays) */
+/* 120px side margins on home + inner-page heroes (full-bleed media stays) */
 .hero__content.container,
 .page-hero__content.container {
   max-width: none;
   width: 100%;
   margin-inline: 0;
-  padding-inline: var(--hero-gutter);
+  padding-inline: var(--hero-gutter) !important;
 }
 
 .hero__content > .hero__eyebrow,
