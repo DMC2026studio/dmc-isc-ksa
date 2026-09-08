@@ -19,6 +19,21 @@ python -m http.server 8080
 |--------|-----|
 | English | http://localhost:8080/ |
 | Arabic (RTL) | http://localhost:8080/ar/ |
+| Live preview | https://dmc2026studio.github.io/dmc-isc-ksa/ |
+
+---
+
+## Commercial milestones (approved quotation)
+
+| # | Scope | Amount | Status |
+|---|--------|--------|--------|
+| 1 | Logo & stationery | ₹40,000 | Prior |
+| **2** | **Website Design** — Home, About, Products/Services, Partners, Projects, Downloads, Contact | **₹25,000** | **Payment received — in delivery** |
+| 3 | Website Development — CMS, bilingual RTL production, WhatsApp, email routing, SEO live, GBP, SSL, analytics | ₹25,000 | Next (after design approval) |
+| 4 | Brochure & datasheets | ₹25,000 | Pending |
+| 5 | Final delivery / QA / IP | ₹10,000 | Pending |
+
+Details: `docs/PHASE-2-WEBSITE-DESIGN.md` · `docs/PHASE-3-WEBSITE-DEVELOPMENT.md`
 
 ---
 
