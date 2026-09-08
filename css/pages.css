@@ -107,7 +107,7 @@
   text-align: start;
 }
 
-/* 120px side margins on home + inner-page heroes (full-bleed media stays) */
+/* Shared side inset on home + inner-page heroes (full-bleed media stays) */
 .hero__content.container,
 .page-hero__content.container {
   max-width: none;
@@ -969,7 +969,7 @@
   z-index: 2;
   width: 100%;
   padding-block: var(--space-8) var(--space-7);
-  /* Width + side inset come from .page-hero__content.container (120px gutters) */
+  /* Width + side inset come from .page-hero__content.container */
   max-width: none;
 }
 

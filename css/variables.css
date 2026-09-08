@@ -102,8 +102,8 @@
   --container-max: none;
   --container-wide: none;
   --container-narrow: 42rem;
-  --gutter: 40px; /* site-wide side inset from viewport */
-  --hero-gutter: 120px; /* hero copy side inset from viewport */
+  --gutter: 150px; /* site-wide side inset (header, sections, footer, heroes) */
+  --hero-gutter: 150px; /* match site-wide inset */
   --header-height: 5.5rem;
   --header-height-sticky: 5rem;
 
@@ -148,5 +148,12 @@
     --header-height: 4.75rem;
     --text-5xl: 2.25rem;
     --text-4xl: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    --gutter: 48px;
+    --hero-gutter: 48px;
   }
 }

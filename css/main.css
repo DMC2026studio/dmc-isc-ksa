@@ -4,13 +4,13 @@
 
 /* Latin + Arabic webfonts — display=swap; Inter removed to reduce payload */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap");
-@import url("variables.css?v=gutter41");
-@import url("reset.css?v=gutter41");
-@import url("typography.css?v=gutter41");
-@import url("layout.css?v=gutter41");
-@import url("components.css?v=gutter41");
-@import url("pages.css?v=gutter41");
-@import url("responsive.css?v=gutter41");
-@import url("rtl.css?v=gutter41");
-@import url("production.css?v=gutter41");
-@import url("brand-industrial.css?v=gutter41");
+@import url("variables.css?v=gutter150");
+@import url("reset.css?v=gutter150");
+@import url("typography.css?v=gutter150");
+@import url("layout.css?v=gutter150");
+@import url("components.css?v=gutter150");
+@import url("pages.css?v=gutter150");
+@import url("responsive.css?v=gutter150");
+@import url("rtl.css?v=gutter150");
+@import url("production.css?v=gutter150");
+@import url("brand-industrial.css?v=gutter150");
