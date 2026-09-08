@@ -1,0 +1,267 @@
+/* ISC Layout — container, grid, sections, utilities */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.container--wide {
+  max-width: var(--container-wide);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+.section {
+  padding-block: var(--space-8);
+  position: relative;
+}
+
+.section--tight {
+  padding-block: var(--space-6);
+}
+
+.section--loose {
+  padding-block: var(--space-9);
+}
+
+.section--dark {
+  background: var(--color-bg-dark);
+  color: var(--color-text-on-dark);
+}
+
+.section--muted {
+  background: var(--color-bg-muted);
+}
+
+.section--green-tint {
+  background: var(--color-green-50);
+}
+
+.section--navy-tint {
+  background: var(--color-navy-50);
+}
+
+.section__rule {
+  height: 1px;
+  background: var(--color-border);
+  border: 0;
+  margin: 0;
+}
+
+/* 12-column grid */
+.grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+.grid--12 {
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-5);
+}
+
+.grid--12 > [class*="col-"] {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+}
+
+/* Editorial asymmetric helpers */
+.editorial {
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .editorial {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: var(--space-8);
+  }
+
+  .editorial--reverse {
+    direction: rtl;
+  }
+
+  .editorial--reverse > * {
+    direction: ltr;
+  }
+
+  [dir="rtl"] .editorial--reverse {
+    direction: ltr;
+  }
+
+  [dir="rtl"] .editorial--reverse > * {
+    direction: rtl;
+  }
+
+  .editorial--offset {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.stack--sm {
+  gap: var(--space-2);
+}
+
+.stack--lg {
+  gap: var(--space-6);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.cluster--gap-sm {
+  gap: var(--space-2);
+}
+
+.tech-line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-block: var(--space-5);
+}
+
+.tech-line::before,
+.tech-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.tech-line__label {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-medium-grey);
+  white-space: nowrap;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: var(--space-4);
+  top: -100%;
+  z-index: var(--z-skip);
+  background: var(--color-primary-green);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-5);
+  font-weight: var(--font-semibold);
+  border-radius: var(--radius-md);
+  transition: top var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+/* Page shell */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__main {
+  flex: 1;
+  padding-top: var(--header-height);
+}

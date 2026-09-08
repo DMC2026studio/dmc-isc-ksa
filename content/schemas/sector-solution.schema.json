@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/sector-solution.schema.json",
+  "title": "SectorSolution",
+  "type": "object",
+  "required": ["id", "slug", "name", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "name": { "type": "string" },
+    "summary": { "type": "string" },
+    "description": { "type": "string" },
+    "relatedCategories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "image": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] }
+  }
+}

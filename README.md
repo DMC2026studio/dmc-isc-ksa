@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Imperial Solution Company (ISC) — Website
 
-## Getting Started
+Official bilingual website for **Imperial Solution Company**, Dammam, Kingdom of Saudi Arabia.
 
-First, run the development server:
+Built by **DMC Creatives Studio** for industrial B2B procurement, localisation partnerships, and supply.
+
+**Stack:** HTML5 · CSS3 · Vanilla JavaScript · PHP (form stubs)  
+**Not used:** React, Next.js, Vue, Bootstrap, Tailwind, jQuery
+
+---
+
+## Preview locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+python -m http.server 8080
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Locale | URL |
+|--------|-----|
+| English | http://localhost:8080/ |
+| Arabic (RTL) | http://localhost:8080/ar/ |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Repository structure
 
-## Learn More
+```
+/
+├── index.html                 # English homepage
+├── *.html                     # English site pages
+├── ar/                        # Arabic RTL pages
+├── assets/
+│   ├── logo/                  # Logo + favicon (canonical)
+│   ├── images/                # Photography / WebP
+│   └── documents/             # Public document library
+├── css/                       # Design system stylesheets
+├── js/                        # Site behaviour modules
+├── php/                       # Contact / RFQ / careers / content API stubs
+├── content/                   # CMS-ready JSON + schemas (en / ar)
+├── design-system/             # Brand & page specifications
+├── docs/                      # Internal briefs & references
+├── tools/                     # Dev utilities (link check, favicon)
+├── favicon.ico                # Browser default icon
+├── robots.txt
+├── sitemap.xml
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Brand tokens
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Token | Hex |
+|-------|-----|
+| Primary green | `#084828` |
+| Secondary green | `#78C078` |
+| Industrial navy | `#103048` |
+| Off-white | `#F4F6F1` |
+| Charcoal | `#202A27` |
 
-## Deploy on Vercel
+Canonical logo: `assets/logo/logo.png`  
+Favicon: `assets/logo/favicon.png` (+ root `favicon.ico`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Content rules
+
+Do **not** invent projects, customers, certifications, ISO claims, Saudi Made / Vision 2030 marks, awards, or capacity figures.  
+Manufacturing status must use: **planned** · **under development** · **being established**.  
+Partner work must be labelled **Partner reference** — never as ISC delivery history.
+
+---
+
+## Launch checklist
+
+1. Set live domain in `content/site.json`, `sitemap.xml`, `robots.txt`, and canonicals  
+2. Configure PHP SMTP for contact / RFQ / careers  
+3. Publish approved partner & product JSON in `content/en/` and `content/ar/`  
+4. Replace Privacy / Terms placeholders with legal text  
+5. Re-crawl sitemap after go-live
+
+---
+
+## Forms
+
+| Form | Handler |
+|------|---------|
+| Contact | `php/contact-handler.php` |
+| RFQ | `php/rfq-handler.php` |
+| Careers | `php/careers-handler.php` |
+
+Handlers return honest 501 until SMTP/API is configured.
+
+---
+
+© Imperial Solution Company · Built by DMC Creatives Studio

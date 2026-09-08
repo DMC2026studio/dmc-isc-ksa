@@ -1,0 +1,62 @@
+{
+    "meta":  {
+                 "collection":  "documents",
+                 "updatedAt":  "2026-09-05T00:00:00Z",
+                 "version":  1,
+                 "locale":  "en"
+             },
+    "items":  [
+                  {
+                      "fileFormat":  "pdf",
+                      "slug":  "company-profile",
+                      "id":  "doc-company-profile",
+                      "relatedProduct":  null,
+                      "updatedAt":  "2026-09-05T00:00:00Z",
+                      "description":  "ISC company profile for clients and partners.",
+                      "status":  "pending",
+                      "relatedCategory":  null,
+                      "docType":  "company-profile",
+                      "title":  "Company Profile",
+                      "file":  null
+                  },
+                  {
+                      "fileFormat":  "pdf",
+                      "slug":  "product-datasheets",
+                      "id":  "doc-datasheets",
+                      "relatedProduct":  null,
+                      "updatedAt":  "2026-09-05T00:00:00Z",
+                      "description":  "Technical datasheets for industrial supply products.",
+                      "status":  "pending",
+                      "relatedCategory":  "industrial-supplies",
+                      "docType":  "datasheet",
+                      "title":  "Product Datasheets",
+                      "file":  null
+                  },
+                  {
+                      "fileFormat":  "pdf",
+                      "slug":  "technical-documents",
+                      "id":  "doc-technical",
+                      "relatedProduct":  null,
+                      "updatedAt":  "2026-09-05T00:00:00Z",
+                      "description":  "Specifications and technical documentation.",
+                      "status":  "pending",
+                      "relatedCategory":  null,
+                      "docType":  "technical",
+                      "title":  "Technical Documents",
+                      "file":  null
+                  },
+                  {
+                      "fileFormat":  "pdf",
+                      "slug":  "brochures",
+                      "id":  "doc-brochures",
+                      "relatedProduct":  null,
+                      "updatedAt":  "2026-09-05T00:00:00Z",
+                      "description":  "Capability and category brochures.",
+                      "status":  "pending",
+                      "relatedCategory":  null,
+                      "docType":  "brochure",
+                      "title":  "Brochures",
+                      "file":  null
+                  }
+              ]
+}

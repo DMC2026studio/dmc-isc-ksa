@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/product.schema.json",
+  "title": "Product",
+  "type": "object",
+  "required": ["id", "slug", "name", "category", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string" },
+    "category": {
+      "type": "string",
+      "description": "Slug of product-category (frc, ppe, mro, …)"
+    },
+    "shortDescription": { "type": "string" },
+    "fullDescription": { "type": "string" },
+    "applications": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "technicalSpecifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": "string" }
+        },
+        "required": ["label", "value"]
+      }
+    },
+    "standards": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "certifications": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "datasheet": {
+      "type": ["string", "null"],
+      "description": "Document id or path under assets/documents/"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "src": { "type": "string" },
+          "alt": { "type": "string" }
+        },
+        "required": ["src"]
+      }
+    },
+    "relatedProducts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Product slugs"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "pending", "published"]
+    },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

@@ -1,0 +1,55 @@
+{
+    "meta":  {
+                 "collection":  "manufacturing-technologies",
+                 "updatedAt":  "2026-09-05T00:00:00Z",
+                 "version":  1,
+                 "locale":  "ar"
+             },
+    "items":  [
+                  {
+                      "images":  [
+
+                                 ],
+                      "slug":  "grc-grp-grg",
+                      "id":  "mfg-grc",
+                      "partner":  null,
+                      "summary":  "GRC facility being established in Dammam.",
+                      "description":  "[CONTENT TO BE PROVIDED]",
+                      "page":  "grc-grp-grg.html",
+                      "name":  "GRC / GRP / GRG",
+                      "location":  "Dammam, Eastern Province",
+                      "status":  "published",
+                      "stage":  "establishing"
+                  },
+                  {
+                      "images":  [
+
+                                 ],
+                      "slug":  "construction-chemicals",
+                      "id":  "mfg-chem",
+                      "partner":  null,
+                      "summary":  "Current supply capability with planned localisation path.",
+                      "description":  "[CONTENT TO BE PROVIDED]",
+                      "page":  "construction-chemicals.html",
+                      "name":  "Construction Chemicals",
+                      "location":  "Kingdom of Saudi Arabia",
+                      "status":  "published",
+                      "stage":  "planned"
+                  },
+                  {
+                      "images":  [
+
+                                 ],
+                      "slug":  "pipe-tube",
+                      "id":  "mfg-pipe",
+                      "partner":  null,
+                      "summary":  "Manufacturing development pipeline.",
+                      "description":  "[CONTENT TO BE PROVIDED]",
+                      "page":  "manufacturing.html",
+                      "name":  "Pipe \u0026 Tube Manufacturing",
+                      "location":  "Eastern Province",
+                      "status":  "pending",
+                      "stage":  "planned"
+                  }
+              ]
+}

@@ -1,0 +1,45 @@
+{
+    "_examples":  [
+                      {
+                          "partner":  null,
+                          "slug":  "example-partner-ref",
+                          "id":  "ref-ex-partner",
+                          "type":  "partner-reference",
+                          "project":  "[PENDING]",
+                          "description":  "[PENDING]",
+                          "technology":  "[PENDING]",
+                          "images":  [
+
+                                     ],
+                          "status":  "pending",
+                          "location":  "[PENDING]",
+                          "externalUrl":  null,
+                          "attribution":  "Partner reference â€” not an ISC project."
+                      },
+                      {
+                          "partner":  null,
+                          "slug":  "example-isc-project",
+                          "id":  "ref-ex-isc",
+                          "type":  "isc-project",
+                          "project":  "[PENDING]",
+                          "description":  "[PENDING]",
+                          "technology":  "[PENDING]",
+                          "images":  [
+
+                                     ],
+                          "status":  "draft",
+                          "location":  "[PENDING]",
+                          "externalUrl":  null,
+                          "attribution":  "ISC project."
+                      }
+                  ],
+    "items":  [
+
+              ],
+    "meta":  {
+                 "collection":  "references",
+                 "updatedAt":  "2026-09-05T00:00:00Z",
+                 "version":  1,
+                 "locale":  "ar"
+             }
+}

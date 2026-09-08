@@ -1,0 +1,50 @@
+{
+    "meta":  {
+                 "collection":  "pages",
+                 "updatedAt":  "2026-09-05T00:00:00Z",
+                 "version":  1,
+                 "locale":  "en"
+             },
+    "items":  [
+                  {
+                      "seoDescription":  "ISC — Saudi localisation platform.",
+                      "id":  "page-home",
+                      "title":  "Home",
+                      "heroTitle":  "Imperial Solution Company",
+                      "status":  "published",
+                      "htmlFile":  "index.html",
+                      "slug":  "home",
+                      "heroLead":  ""
+                  },
+                  {
+                      "seoDescription":  "Partner references and future ISC projects.",
+                      "id":  "page-references",
+                      "title":  "References",
+                      "heroTitle":  "Reference library",
+                      "status":  "published",
+                      "htmlFile":  "references.html",
+                      "slug":  "references",
+                      "heroLead":  ""
+                  },
+                  {
+                      "seoDescription":  "Downloadable ISC documents library.",
+                      "id":  "page-documents",
+                      "title":  "Documents",
+                      "heroTitle":  "Document library",
+                      "status":  "published",
+                      "htmlFile":  "documents.html",
+                      "slug":  "documents",
+                      "heroLead":  ""
+                  },
+                  {
+                      "seoDescription":  "Careers at ISC.",
+                      "id":  "page-careers",
+                      "title":  "Careers",
+                      "heroTitle":  "Careers at ISC",
+                      "status":  "published",
+                      "htmlFile":  "careers.html",
+                      "slug":  "careers",
+                      "heroLead":  ""
+                  }
+              ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "project": "Imperial Solution Company",
+  "source": "json",
+  "apiBase": "/php/content-api.php",
+  "locales": ["en", "ar"],
+  "defaultLocale": "en",
+  "collections": [
+    "pages",
+    "product-categories",
+    "products",
+    "sector-solutions",
+    "manufacturing-technologies",
+    "partners",
+    "references",
+    "documents",
+    "careers",
+    "news"
+  ],
+  "publishStatuses": ["published"],
+  "notes": "Set source to api when PHP/MySQL or headless CMS is connected. JSON files remain the contract."
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/document.schema.json",
+  "title": "Document",
+  "type": "object",
+  "required": ["id", "slug", "title", "docType", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "docType": {
+      "type": "string",
+      "enum": ["company-profile", "datasheet", "technical", "brochure", "other"]
+    },
+    "description": { "type": "string" },
+    "file": {
+      "type": ["string", "null"],
+      "description": "Path under assets/documents/ when file exists"
+    },
+    "fileFormat": { "type": "string", "enum": ["pdf", "doc", "docx", "xls", "xlsx"] },
+    "relatedProduct": { "type": ["string", "null"] },
+    "relatedCategory": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

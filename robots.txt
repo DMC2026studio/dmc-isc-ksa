@@ -1,0 +1,18 @@
+# robots.txt — Imperial Solution Company
+User-agent: *
+Allow: /
+
+# Product & category pages are indexable
+Allow: /frc.html
+Allow: /ppe.html
+Allow: /mro.html
+Allow: /industrial-supplies.html
+Allow: /sector-solutions.html
+Allow: /documents.html
+
+# Disallow form handlers and local content tooling if exposed
+Disallow: /php/
+Disallow: /content/schemas/
+Disallow: /design-system/
+
+Sitemap: https://www.imperialsolution.sa/sitemap.xml

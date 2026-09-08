@@ -1,0 +1,63 @@
+{
+    "meta":  {
+                 "collection":  "sector-solutions",
+                 "updatedAt":  "2026-09-05T00:00:00Z",
+                 "version":  1,
+                 "locale":  "ar"
+             },
+    "items":  [
+                  {
+                      "id":  "sec-og",
+                      "name":  "Oil \u0026 Gas",
+                      "description":  "[CONTENT TO BE PROVIDED]",
+                      "status":  "published",
+                      "summary":  "Industrial supply support for oil and gas environments.",
+                      "slug":  "oil-gas",
+                      "relatedCategories":  [
+                                                "frc",
+                                                "ppe",
+                                                "mro"
+                                            ],
+                      "image":  null
+                  },
+                  {
+                      "id":  "sec-petro",
+                      "name":  "Petrochemical",
+                      "description":  "[CONTENT TO BE PROVIDED]",
+                      "status":  "published",
+                      "summary":  "Supply solutions for petrochemical facilities.",
+                      "slug":  "petrochemical",
+                      "relatedCategories":  [
+                                                "frc",
+                                                "ppe",
+                                                "mro"
+                                            ],
+                      "image":  null
+                  },
+                  {
+                      "id":  "sec-marine",
+                      "name":  "Marine",
+                      "description":  "[CONTENT TO BE PROVIDED]",
+                      "status":  "published",
+                      "summary":  "Marine and offshore industrial supply context.",
+                      "slug":  "marine",
+                      "relatedCategories":  [
+                                                "ppe",
+                                                "mro"
+                                            ],
+                      "image":  null
+                  },
+                  {
+                      "id":  "sec-construction",
+                      "name":  "Construction",
+                      "description":  "[CONTENT TO BE PROVIDED]",
+                      "status":  "published",
+                      "summary":  "Construction-sector industrial materials and safety.",
+                      "slug":  "construction",
+                      "relatedCategories":  [
+                                                "mro"
+                                            ],
+                      "image":  null
+                  }
+              ]
+}

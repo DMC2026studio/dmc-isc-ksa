@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/product-category.schema.json",
+  "title": "ProductCategory",
+  "type": "object",
+  "required": ["id", "slug", "name", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "name": { "type": "string" },
+    "parent": { "type": ["string", "null"] },
+    "description": { "type": "string" },
+    "page": { "type": "string", "description": "Frontend HTML page, e.g. frc.html" },
+    "image": { "type": ["string", "null"] },
+    "order": { "type": "integer" },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] }
+  }
+}

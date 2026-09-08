@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/page.schema.json",
+  "title": "Page",
+  "type": "object",
+  "required": ["id", "slug", "title", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "seoDescription": { "type": "string" },
+    "heroTitle": { "type": "string" },
+    "heroLead": { "type": "string" },
+    "htmlFile": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] }
+  }
+}

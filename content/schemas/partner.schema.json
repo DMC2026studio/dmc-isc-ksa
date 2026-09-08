@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/partner.schema.json",
+  "title": "Partner",
+  "type": "object",
+  "required": ["id", "slug", "name", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "name": { "type": "string" },
+    "logo": { "type": ["string", "null"] },
+    "technology": { "type": "string" },
+    "relationship": { "type": "string" },
+    "website": { "type": ["string", "null"], "format": "uri" },
+    "referenceWork": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Reference slugs"
+    },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "_exampleDraft":  {
+                          "id":  "prod-example",
+                          "category":  "frc",
+                          "certifications":  [
+
+                                             ],
+                          "relatedProducts":  [
+
+                                              ],
+                          "technicalSpecifications":  [
+
+                                                      ],
+                          "fullDescription":  "[CONTENT TO BE PROVIDED]",
+                          "standards":  [
+
+                                        ],
+                          "name":  "[PRODUCT NAME PENDING]",
+                          "applications":  [
+
+                                           ],
+                          "status":  "draft",
+                          "slug":  "example-frc-coverall",
+                          "images":  [
+
+                                     ],
+                          "shortDescription":  "[CONTENT TO BE PROVIDED]",
+                          "datasheet":  null
+                      },
+    "items":  [
+
+              ],
+    "meta":  {
+                 "collection":  "products",
+                 "updatedAt":  "2026-09-05T00:00:00Z",
+                 "version":  1,
+                 "locale":  "ar"
+             }
+}

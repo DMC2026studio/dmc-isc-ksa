@@ -1,0 +1,107 @@
+/* ISC Responsive refinements
+   Mobile-first base lives in layout/components.
+   This file holds breakpoint polish and edge cases.
+*/
+
+/* Extra-small phones */
+@media (max-width: 379px) {
+  .hero__company {
+    font-size: 1.85rem;
+  }
+
+  .hero__title {
+    font-size: 1.05rem;
+  }
+
+  .logo img {
+    height: 2.85rem;
+  }
+}
+
+/* Phase 8 — verified widths: 375 · 390 · 430 · 768 · 1024 · 1440 */
+@media (max-width: 430px) {
+  .site-header__inner {
+    gap: var(--space-2);
+  }
+
+  .page-hero {
+    min-height: min(48vh, 22rem);
+  }
+}
+
+/* Mobile: logo + language + menu (CTA stays in drawer) */
+@media (max-width: 1023px) {
+  .site-header__actions .lang-switch {
+    display: inline-flex;
+  }
+
+  .mobile-nav .lang-switch {
+    display: inline-flex;
+    margin-top: var(--space-2);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    min-height: min(78vh, 44rem);
+  }
+
+  .logo img {
+    height: 3.4rem;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1440px) {
+  .hero__content {
+    padding-block: var(--space-10) var(--space-9);
+  }
+
+  .section--loose {
+    padding-block: var(--space-10);
+  }
+}
+
+/* Print */
+@media print {
+  .site-header,
+  .mobile-nav,
+  .nav-toggle,
+  .skip-link,
+  .rfq-sticky {
+    display: none !important;
+  }
+
+  body {
+    padding-bottom: 0 !important;
+  }
+
+  .page__main {
+    padding-top: 0;
+  }
+
+  .hero {
+    min-height: auto;
+    color: var(--color-charcoal);
+    background: white;
+  }
+
+  .hero__scrim,
+  .hero::after {
+    display: none;
+  }
+}
+
+/* Prevent horizontal overflow */
+html,
+body {
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}

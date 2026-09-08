@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/news.schema.json",
+  "title": "News",
+  "type": "object",
+  "required": ["id", "slug", "title", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "excerpt": { "type": "string" },
+    "body": { "type": "string" },
+    "image": { "type": ["string", "null"] },
+    "publishedAt": { "type": "string", "format": "date" },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] }
+  }
+}

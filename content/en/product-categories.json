@@ -1,0 +1,54 @@
+{
+    "meta":  {
+                 "collection":  "product-categories",
+                 "updatedAt":  "2026-09-05T00:00:00Z",
+                 "version":  1,
+                 "locale":  "en"
+             },
+    "items":  [
+                  {
+                      "image":  "assets/images/home/safety-ppe.jpg",
+                      "slug":  "industrial-supplies",
+                      "id":  "cat-industrial",
+                      "parent":  null,
+                      "order":  1,
+                      "description":  "Industrial supply, FRC, PPE and MRO for Saudi buyers.",
+                      "page":  "industrial-supplies.html",
+                      "name":  "Industrial Supplies",
+                      "status":  "published"
+                  },
+                  {
+                      "image":  "assets/images/home/safety-ppe.jpg",
+                      "slug":  "frc",
+                      "id":  "cat-frc",
+                      "parent":  "industrial-supplies",
+                      "order":  2,
+                      "description":  "Fire resistant clothing for industrial environments. FRC means Fire Resistant Clothing only.",
+                      "page":  "frc.html",
+                      "name":  "Fire Resistant Clothing (FRC)",
+                      "status":  "published"
+                  },
+                  {
+                      "image":  "assets/images/home/safety-ppe.jpg",
+                      "slug":  "ppe",
+                      "id":  "cat-ppe",
+                      "parent":  "industrial-supplies",
+                      "order":  3,
+                      "description":  "PPE categories for industrial buyers.",
+                      "page":  "ppe.html",
+                      "name":  "Personal Protective Equipment (PPE)",
+                      "status":  "published"
+                  },
+                  {
+                      "image":  "assets/images/home/steel-pipes.jpg",
+                      "slug":  "mro",
+                      "id":  "cat-mro",
+                      "parent":  "industrial-supplies",
+                      "order":  4,
+                      "description":  "Maintenance, repair and operations consumables.",
+                      "page":  "mro.html",
+                      "name":  "MRO \u0026 Industrial Consumables",
+                      "status":  "published"
+                  }
+              ]
+}

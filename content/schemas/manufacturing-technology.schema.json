@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/manufacturing-technology.schema.json",
+  "title": "ManufacturingTechnology",
+  "type": "object",
+  "required": ["id", "slug", "name", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "name": { "type": "string" },
+    "stage": {
+      "type": "string",
+      "enum": ["planned", "establishing", "in-development", "operational"],
+      "description": "Never claim operational unless confirmed"
+    },
+    "summary": { "type": "string" },
+    "description": { "type": "string" },
+    "location": { "type": "string" },
+    "page": { "type": "string" },
+    "partner": { "type": ["string", "null"] },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "src": { "type": "string" },
+          "alt": { "type": "string" }
+        }
+      }
+    },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] }
+  }
+}

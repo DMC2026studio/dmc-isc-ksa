@@ -1,0 +1,12 @@
+{
+    "_note":  "No openings invented. careers.html shows empty state when items is empty.",
+    "items":  [
+
+              ],
+    "meta":  {
+                 "collection":  "careers",
+                 "updatedAt":  "2026-09-05T00:00:00Z",
+                 "version":  1,
+                 "locale":  "ar"
+             }
+}

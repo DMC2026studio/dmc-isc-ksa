@@ -1,0 +1,412 @@
+/* =========================================================
+   Brand art direction — industrial institutional (audit pass)
+   Overrides soft/SaaS template cues while keeping brand tokens.
+   ========================================================= */
+
+:root {
+  /* Sharper industrial edges — not soft SaaS cards */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 2px;
+  --shadow-xs: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+}
+
+/* Buttons: precise, not pill-like */
+.btn {
+  border-radius: 0;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+}
+
+.btn--lg {
+  font-size: 0.875rem;
+}
+
+.btn--ghost {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  text-decoration: underline;
+}
+
+/* Cards / panels — technical frames, not product tiles */
+.card,
+.pillar-card,
+.product-card,
+.doc-card,
+.partner-card,
+.partner-card-premium,
+.reference-card,
+.capability-card,
+.case-card,
+.sector-card,
+.job-card,
+.mfg-division,
+.ppe-tile,
+.mro-tile {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.pillar-card--priority {
+  background: var(--color-white);
+  border-width: 2px;
+  border-color: var(--color-primary-green);
+  box-shadow: none;
+}
+
+.pillar-card:hover,
+.card--interactive:hover {
+  box-shadow: none;
+  border-color: var(--color-primary-green);
+}
+
+/* Section hierarchy — not equal visual weight */
+.section--secondary {
+  padding-block: var(--space-7);
+}
+
+.section--secondary .section-header__title {
+  font-size: var(--text-2xl);
+}
+
+.section--tertiary {
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.section--tertiary .section-header__title {
+  font-size: var(--text-xl);
+}
+
+/* Positioning formula band */
+.position-formula {
+  background: var(--color-industrial-navy);
+  color: var(--color-off-white);
+  padding-block: var(--space-6);
+  border-block: 3px solid var(--color-primary-green);
+}
+
+.position-formula__label {
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary-green);
+  margin-bottom: var(--space-4);
+}
+
+.position-formula__track {
+  display: grid;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: formula;
+}
+
+@media (min-width: 768px) {
+  .position-formula__track {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+}
+
+.position-formula__step {
+  position: relative;
+  padding: var(--space-4);
+  border: 1px solid rgba(244, 246, 241, 0.18);
+  background: rgba(10, 31, 46, 0.45);
+}
+
+@media (min-width: 768px) {
+  .position-formula__step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    inset-inline-end: -0.55rem;
+    width: 0.7rem;
+    height: 1px;
+    background: var(--color-secondary-green);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+
+.position-formula__step strong {
+  display: block;
+  font-size: var(--text-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-off-white);
+  margin-bottom: 0.35rem;
+}
+
+.position-formula__step span {
+  font-size: var(--text-sm);
+  color: rgba(244, 246, 241, 0.72);
+  line-height: 1.45;
+}
+
+/* Hero brand dominance */
+.hero__company {
+  font-size: clamp(2.15rem, 5vw, 3.5rem);
+  font-weight: var(--font-bold);
+  letter-spacing: -0.02em;
+  color: var(--color-off-white);
+  margin: 0 0 var(--space-4);
+  line-height: 1.12;
+  max-width: 18ch;
+  text-transform: none;
+}
+
+.hero__title {
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.01em;
+  color: var(--color-secondary-green);
+  margin: 0 0 var(--space-4);
+  max-width: 28ch;
+  line-height: 1.35;
+}
+
+.hero__lead {
+  max-width: 40ch;
+}
+
+/* Partner reference callout — unmistakable */
+.reference-note {
+  border-inline-start: 4px solid var(--color-industrial-navy);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-navy-50);
+  font-size: var(--text-sm);
+}
+
+.reference-label {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: var(--font-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-industrial-navy);
+  background: var(--color-navy-100);
+  padding: 0.3rem 0.55rem;
+  margin-bottom: var(--space-3);
+}
+
+.ref-entry__tag--partner,
+.case-card__tag {
+  border: 1px solid var(--color-industrial-navy);
+  background: var(--color-navy-100);
+  color: var(--color-industrial-navy);
+  font-weight: var(--font-bold);
+}
+
+.ref-entry__tag--isc {
+  border: 1px solid var(--color-primary-green);
+}
+
+/* Sticky mobile RFQ */
+.rfq-sticky {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .rfq-sticky {
+    display: block;
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: var(--z-sticky);
+    padding: 0.65rem var(--gutter);
+    background: rgba(16, 48, 72, 0.96);
+    border-top: 2px solid var(--color-primary-green);
+    box-shadow: 0 -4px 16px rgba(16, 48, 72, 0.25);
+  }
+
+  .rfq-sticky .btn {
+    width: 100%;
+  }
+
+  body {
+    padding-bottom: 4.25rem;
+  }
+
+  body.nav-open .rfq-sticky {
+    display: none;
+  }
+}
+
+/* Credibility — institutional meta, not marketing stats */
+.credibility {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.credibility__value {
+  font-weight: var(--font-semibold);
+}
+
+/* Facade section — lower visual priority */
+.facade-section {
+  min-height: auto;
+}
+
+@media (min-width: 900px) {
+  .facade-section {
+    min-height: 28rem;
+  }
+}
+
+/* Journey emphasis */
+.journey {
+  border-block: 1px solid rgba(120, 192, 120, 0.25);
+}
+
+/* Forms — industrial inputs */
+.form__input,
+.form__select,
+.form__textarea {
+  border-radius: 0;
+}
+
+/* Kill soft decorative overuse on invite/hero grids at small sizes */
+@media (max-width: 767px) {
+  .hero__grid,
+  .hero__tech-line,
+  .hero__tech-corner {
+    opacity: 0.1;
+  }
+
+  .invite-hero::before {
+    opacity: 0.35;
+  }
+}
+
+/* Partner reference entries — unmistakable attribution */
+.ref-entry--partner {
+  border: 1px solid var(--color-navy-200);
+  border-inline-start: 4px solid var(--color-industrial-navy);
+  background: var(--color-white);
+}
+
+.case-card--partner {
+  border-inline-start: 4px solid var(--color-industrial-navy);
+}
+
+.ref-entry--partner .ref-entry__tag {
+  display: none; /* .reference-label is the visible PARTNER REFERENCE mark */
+}
+
+.ref-entry--isc .reference-label {
+  background: var(--color-green-100);
+  color: var(--color-primary-green);
+}
+
+/* Sector tags — technical labels, not marketing pills */
+.sector-tag {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-charcoal);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.6875rem;
+  font-weight: var(--font-semibold);
+  padding: 0.35rem 0.55rem;
+}
+
+/* Soften decorative brand gradients — solid navy/green preferred */
+.final-cta,
+.cta-band,
+.journey__footer {
+  background: var(--color-industrial-navy);
+}
+
+.qa-process .section-header__title {
+  font-size: var(--text-xl);
+}
+
+.cluster--spaced {
+  margin-top: var(--space-5);
+}
+
+/* Focus: keep institutional, visible */
+:focus-visible {
+  outline: 2px solid var(--color-primary-green);
+  outline-offset: 2px;
+}
+
+/* Reduce equal-weight card chrome */
+.capability-card,
+.partner-logo-slot,
+.reference-panel,
+.partner-panel {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.mfg-division__body .capability-card__status {
+  display: inline-block;
+  margin-bottom: var(--space-3);
+}
+
+/* Soften soft-UI hover chrome */
+.about-pillar-link:hover,
+.product-card:hover,
+.doc-card:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 429px) {
+  .hero__company {
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+  }
+
+  .position-formula__step {
+    padding: var(--space-3);
+  }
+
+  .credibility__grid {
+    gap: var(--space-3);
+  }
+}
+
+/* Footer — force readable on-dark contrast (audit) */
+.site-footer,
+.site-footer .footer__heading,
+.site-footer .footer__list a,
+.site-footer .footer__legal a,
+.site-footer .footer__bottom,
+.site-footer .footer__bottom p,
+.site-footer .footer__location {
+  color: rgba(244, 246, 241, 0.9);
+}
+
+.site-footer .footer__heading {
+  color: var(--color-secondary-green);
+}
+
+.site-footer a:not(.btn) {
+  color: rgba(244, 246, 241, 0.9) !important;
+  text-decoration: none !important;
+  background: transparent;
+}
+
+.site-footer a:not(.btn):hover {
+  color: var(--color-secondary-green) !important;
+}
+
+.site-footer .lang-switch a[aria-current="true"],
+.site-footer .lang-switch a:hover {
+  color: var(--color-off-white) !important;
+  background: rgba(244, 246, 241, 0.12) !important;
+  border: 1px solid rgba(120, 192, 120, 0.5);
+}
+
+.site-footer .placeholder-content {
+  color: rgba(244, 246, 241, 0.8) !important;
+  background: rgba(244, 246, 241, 0.08) !important;
+  border-color: rgba(120, 192, 120, 0.45) !important;
+}

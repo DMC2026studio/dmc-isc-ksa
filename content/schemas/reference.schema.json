@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/reference.schema.json",
+  "title": "Reference",
+  "type": "object",
+  "required": ["id", "slug", "type", "project", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["partner-reference", "isc-project"],
+      "description": "Partner reference ≠ ISC project"
+    },
+    "partner": {
+      "type": ["string", "null"],
+      "description": "Partner id/slug; null for ISC projects"
+    },
+    "project": { "type": "string" },
+    "location": { "type": "string" },
+    "technology": { "type": "string" },
+    "description": { "type": "string" },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "src": { "type": "string" },
+          "alt": { "type": "string" }
+        },
+        "required": ["src"]
+      }
+    },
+    "attribution": {
+      "type": "string",
+      "description": "Clear credit line for partner work"
+    },
+    "externalUrl": { "type": ["string", "null"], "format": "uri" },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

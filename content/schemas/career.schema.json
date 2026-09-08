@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://isc.local/schemas/career.schema.json",
+  "title": "Career",
+  "type": "object",
+  "required": ["id", "slug", "title", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "department": { "type": "string" },
+    "location": { "type": "string" },
+    "employmentType": { "type": "string" },
+    "summary": { "type": "string" },
+    "description": { "type": "string" },
+    "applyUrl": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["draft", "pending", "published"] },
+    "postedAt": { "type": "string", "format": "date" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}
