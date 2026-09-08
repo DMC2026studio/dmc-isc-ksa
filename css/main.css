@@ -4,13 +4,13 @@
 
 /* Latin + Arabic webfonts — display=swap; Inter removed to reduce payload */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap");
-@import url("variables.css?v=logoOrig1");
-@import url("reset.css?v=logoOrig1");
-@import url("typography.css?v=logoOrig1");
-@import url("layout.css?v=logoOrig1");
-@import url("components.css?v=logoOrig1");
-@import url("pages.css?v=logoOrig1");
-@import url("responsive.css?v=logoOrig1");
-@import url("rtl.css?v=logoOrig1");
-@import url("production.css?v=logoOrig1");
-@import url("brand-industrial.css?v=logoOrig1");
+@import url("variables.css?v=langUx1");
+@import url("reset.css?v=langUx1");
+@import url("typography.css?v=langUx1");
+@import url("layout.css?v=langUx1");
+@import url("components.css?v=langUx1");
+@import url("pages.css?v=langUx1");
+@import url("responsive.css?v=langUx1");
+@import url("rtl.css?v=langUx1");
+@import url("production.css?v=langUx1");
+@import url("brand-industrial.css?v=langUx1");
