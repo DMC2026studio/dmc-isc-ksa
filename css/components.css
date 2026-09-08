@@ -909,16 +909,21 @@ body.nav-open {
   }
 }
 
-.footer__brand .logo {
+.footer__brand .logo,
+.footer__brand .logo img {
   display: inline-flex;
-  padding: 0;
-  background: transparent;
-  border: 0;
-  outline: none;
+  padding: 0 !important;
+  margin: 0;
+  background: transparent !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
 }
 
 .footer__brand .logo img {
   height: 3.75rem;
+  width: auto;
   margin-bottom: 0;
   display: block;
 }
