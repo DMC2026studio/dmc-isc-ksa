@@ -136,6 +136,10 @@
   text-decoration: none;
 }
 
+.logo picture {
+  display: contents;
+}
+
 .logo img {
   height: 3.25rem;
   width: auto;
@@ -143,8 +147,22 @@
   object-fit: contain;
 }
 
+@media (max-width: 480px) {
+  .site-header .logo img {
+    height: 2.65rem;
+    max-width: 2.85rem;
+  }
+}
+
 .site-header.is-scrolled .logo img {
   height: 2.85rem;
+}
+
+@media (max-width: 480px) {
+  .site-header.is-scrolled .logo img {
+    height: 2.4rem;
+    max-width: 2.6rem;
+  }
 }
 
 @media (min-width: 1024px) {
