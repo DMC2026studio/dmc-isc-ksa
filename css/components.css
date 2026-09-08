@@ -132,36 +132,85 @@
 .logo {
   display: inline-flex;
   align-items: center;
+  gap: 0.7rem;
   flex-shrink: 0;
   text-decoration: none;
+  min-width: 0;
+  max-width: min(22rem, 48vw);
 }
 
-.logo picture {
-  display: contents;
-}
-
-.logo img {
-  height: 3.25rem;
+.logo__mark {
+  height: 2.75rem;
   width: auto;
-  max-width: min(14rem, 52vw);
-  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
 }
 
-@media (max-width: 480px) {
-  .site-header .logo img {
-    height: 2.65rem;
-    max-width: 2.85rem;
+.logo__text {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: 0.55rem;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.logo__name {
+  font-size: 0.78rem;
+  font-weight: var(--font-bold);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-industrial-navy);
+  white-space: nowrap;
+}
+
+.logo__name-ar {
+  font-family: var(--font-arabic);
+  font-size: 0.72rem;
+  font-weight: var(--font-semibold);
+  color: var(--color-primary-green);
+  white-space: nowrap;
+}
+
+.site-header.is-scrolled .logo__mark {
+  height: 2.35rem;
+}
+
+.site-footer .logo {
+  max-width: min(24rem, 90%);
+}
+
+.site-footer .logo__mark {
+  height: 2.5rem;
+}
+
+.site-footer .logo__name {
+  color: var(--color-off-white);
+}
+
+.site-footer .logo__name-ar {
+  color: rgba(244, 246, 241, 0.82);
+}
+
+@media (max-width: 1100px) {
+  .logo__name-ar {
+    display: none;
   }
 }
 
-.site-header.is-scrolled .logo img {
-  height: 2.85rem;
-}
-
 @media (max-width: 480px) {
-  .site-header.is-scrolled .logo img {
-    height: 2.4rem;
-    max-width: 2.6rem;
+  .site-header .logo {
+    max-width: none;
+    gap: 0;
+  }
+
+  .site-header .logo__text {
+    display: none;
+  }
+
+  .site-header .logo__mark {
+    height: 2.5rem;
   }
 }
 
@@ -194,18 +243,18 @@
     letter-spacing: 0.01em;
   }
 
-  .logo img {
-    height: 3.75rem;
+  .logo__mark {
+    height: 3.15rem;
   }
 
-  .site-header.is-scrolled .logo img {
-    height: 3.25rem;
+  .site-header.is-scrolled .logo__mark {
+    height: 2.75rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .logo img {
-    height: 4rem;
+  .logo__mark {
+    height: 3.35rem;
   }
 
   .site-nav__link {
@@ -927,11 +976,10 @@ body.nav-open {
   }
 }
 
-.footer__brand .logo,
-.footer__brand .logo img {
+.footer__brand .logo {
   display: inline-flex;
   padding: 0 !important;
-  margin: 0;
+  margin: 0 0 var(--space-3);
   background: transparent !important;
   border: 0 !important;
   outline: none !important;
@@ -939,10 +987,9 @@ body.nav-open {
   border-radius: 0;
 }
 
-.footer__brand .logo img {
-  height: 3.75rem;
+.footer__brand .logo__mark {
+  height: 2.5rem;
   width: auto;
-  margin-bottom: 0;
   display: block;
 }
 

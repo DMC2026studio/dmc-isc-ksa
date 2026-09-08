@@ -13,13 +13,8 @@
     font-size: 1.05rem;
   }
 
-  .logo img {
-    height: 2.85rem;
-  }
-
-  .site-header .logo img {
+  .logo__mark {
     height: 2.4rem;
-    max-width: 2.6rem;
   }
 }
 
@@ -52,8 +47,8 @@
     min-height: min(78vh, 44rem);
   }
 
-  .logo img {
-    height: 3.4rem;
+  .logo__mark {
+    height: 2.9rem;
   }
 }
 
