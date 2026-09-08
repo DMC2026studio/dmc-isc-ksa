@@ -104,9 +104,17 @@
   z-index: 3;
   width: 100%;
   padding-block: var(--space-9) var(--space-8);
-  max-width: 44rem;
+  max-width: none;
   text-align: start;
   margin-inline-end: auto;
+}
+
+.hero__content > .hero__eyebrow,
+.hero__content > .hero__company,
+.hero__content > .hero__title,
+.hero__content > .hero__lead,
+.hero__content > .hero__actions {
+  max-width: 40rem;
 }
 
 .hero__eyebrow {
