@@ -104,9 +104,11 @@
   z-index: 3;
   width: 100%;
   padding-block: var(--space-9) var(--space-8);
-  max-width: none;
+  /* Keep full container width so copy sits on the content grid —
+     do not shrink/center a 44rem wrapper (that created the large left gap). */
+  max-width: var(--container-max);
   text-align: start;
-  margin-inline-end: auto;
+  margin-inline: auto;
 }
 
 .hero__content > .hero__eyebrow,
@@ -114,7 +116,7 @@
 .hero__content > .hero__title,
 .hero__content > .hero__lead,
 .hero__content > .hero__actions {
-  max-width: 40rem;
+  max-width: 36rem;
 }
 
 .hero__eyebrow {
