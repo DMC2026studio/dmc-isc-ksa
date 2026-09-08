@@ -911,9 +911,10 @@ body.nav-open {
 
 .footer__brand .logo {
   display: inline-flex;
-  padding: 0.55rem 0.75rem;
-  background: var(--color-off-white);
-  border: 1px solid rgba(244, 246, 241, 0.2);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  outline: none;
 }
 
 .footer__brand .logo img {
