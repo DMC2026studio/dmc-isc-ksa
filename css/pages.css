@@ -104,10 +104,10 @@
   z-index: 3;
   width: 100%;
   padding-block: var(--space-9) var(--space-8);
-  /* Keep full container width so copy sits on the content grid —
-     do not shrink/center a 44rem wrapper (that created the large left gap). */
-  max-width: var(--container-max);
   text-align: start;
+  /* Sit between the old centered 44rem column and the full header width —
+     reduce left empty space without flushing to the logo edge. */
+  max-width: 81.25rem; /* 1300px */
   margin-inline: auto;
 }
 
@@ -116,7 +116,18 @@
 .hero__content > .hero__title,
 .hero__content > .hero__lead,
 .hero__content > .hero__actions {
-  max-width: 36rem;
+  max-width: 34rem;
+}
+
+@media (min-width: 1100px) {
+  .hero__content.container {
+    /* Pull the content column slightly toward the header’s left edge */
+    margin-inline-start: max(
+      var(--gutter),
+      calc((100vw - var(--container-wide)) / 2)
+    );
+    margin-inline-end: auto;
+  }
 }
 
 .hero__eyebrow {
