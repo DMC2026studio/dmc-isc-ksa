@@ -103,6 +103,7 @@
   --container-wide: 87.5rem; /* 1400px */
   --container-narrow: 42rem;
   --gutter: 1.5rem;
+  --hero-gutter: 80px; /* side inset for all hero copy */
   --header-height: 5.5rem;
   --header-height-sticky: 5rem;
 
@@ -143,6 +144,7 @@
 @media (max-width: 767px) {
   :root {
     --gutter: 1rem;
+    --hero-gutter: 1.25rem;
     --header-height: 4.75rem;
     --text-5xl: 2.25rem;
     --text-4xl: 1.875rem;
