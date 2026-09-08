@@ -4,13 +4,13 @@
 
 /* Latin + Arabic webfonts — display=swap; Inter removed to reduce payload */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap");
-@import url("variables.css?v=logoLine1");
-@import url("reset.css?v=logoLine1");
-@import url("typography.css?v=logoLine1");
-@import url("layout.css?v=logoLine1");
-@import url("components.css?v=logoLine1");
-@import url("pages.css?v=logoLine1");
-@import url("responsive.css?v=logoLine1");
-@import url("rtl.css?v=logoLine1");
-@import url("production.css?v=logoLine1");
-@import url("brand-industrial.css?v=logoLine1");
+@import url("variables.css?v=hexiq1");
+@import url("reset.css?v=hexiq1");
+@import url("typography.css?v=hexiq1");
+@import url("layout.css?v=hexiq1");
+@import url("components.css?v=hexiq1");
+@import url("pages.css?v=hexiq1");
+@import url("responsive.css?v=hexiq1");
+@import url("rtl.css?v=hexiq1");
+@import url("production.css?v=hexiq1");
+@import url("brand-industrial.css?v=hexiq1");

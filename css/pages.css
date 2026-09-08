@@ -107,15 +107,6 @@
   text-align: start;
 }
 
-/* Shared side inset on home + inner-page heroes (full-bleed media stays) */
-.hero__content.container,
-.page-hero__content.container {
-  max-width: none;
-  width: 100%;
-  margin-inline: 0;
-  padding-inline: var(--hero-gutter) !important;
-}
-
 .hero__content > .hero__eyebrow,
 .hero__content > .hero__company,
 .hero__content > .hero__title,
@@ -2734,13 +2725,6 @@
   background-size: 48px 48px;
   mask-image: radial-gradient(ellipse at 80% 20%, black, transparent 65%);
   pointer-events: none;
-}
-
-.invite-hero > .container {
-  max-width: none;
-  width: 100%;
-  margin-inline: 0;
-  padding-inline: var(--hero-gutter);
 }
 
 .invite-hero__inner {

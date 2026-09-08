@@ -98,12 +98,12 @@
   --space-9: 6rem;
   --space-10: 8rem;
 
-  /* Layout — full-width with fixed viewport side insets */
-  --container-max: none;
-  --container-wide: none;
+  /* Layout — Hexiqon-style: one centered content column, full-bleed backgrounds */
+  --container-max: 72.5rem; /* 1160px */
+  --container-wide: 72.5rem; /* same as max so header/hero/footer align */
   --container-narrow: 42rem;
-  --gutter: 150px; /* site-wide side inset (header, sections, footer, heroes) */
-  --hero-gutter: 150px; /* match site-wide inset */
+  --gutter: clamp(1.25rem, 4vw, 2rem);
+  --hero-gutter: var(--gutter); /* heroes share the same column */
   --header-height: 5.5rem;
   --header-height-sticky: 5rem;
 
@@ -148,12 +148,5 @@
     --header-height: 4.75rem;
     --text-5xl: 2.25rem;
     --text-4xl: 1.875rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  :root {
-    --gutter: 48px;
-    --hero-gutter: 48px;
   }
 }
