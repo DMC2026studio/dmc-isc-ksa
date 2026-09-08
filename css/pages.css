@@ -483,13 +483,102 @@
   border-radius: var(--radius-sm);
 }
 
-/* —— Sourcing process —— */
+/* —— Sourcing process — industrial rail (not soft cards) —— */
 .qa-process {
-  background: var(--color-white);
+  background: var(--color-off-white);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
+  padding-block: var(--space-8);
 }
 
+.qa-process .section-header {
+  max-width: 40rem;
+  margin-bottom: var(--space-6);
+}
+
+.qa-process .section-header__title {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.qa-rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--color-navy-200);
+  background: var(--color-industrial-navy);
+}
+
+@media (min-width: 900px) {
+  .qa-rail {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.qa-rail__step {
+  position: relative;
+  padding: var(--space-5) var(--space-5) var(--space-6);
+  border-bottom: 1px solid rgba(244, 246, 241, 0.12);
+  text-align: start;
+}
+
+@media (min-width: 900px) {
+  .qa-rail__step {
+    border-bottom: 0;
+    border-inline-end: 1px solid rgba(244, 246, 241, 0.12);
+    min-height: 14rem;
+  }
+
+  .qa-rail__step:last-child {
+    border-inline-end: 0;
+  }
+
+  .qa-rail__step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 2.35rem;
+    inset-inline-end: -0.4rem;
+    width: 0.75rem;
+    height: 2px;
+    background: var(--color-secondary-green);
+    z-index: 1;
+  }
+}
+
+.qa-rail__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.25rem;
+  height: 1.65rem;
+  margin-bottom: var(--space-4);
+  padding-inline: 0.45rem;
+  font-size: 0.6875rem;
+  font-weight: var(--font-bold);
+  letter-spacing: 0.08em;
+  color: var(--color-industrial-navy);
+  background: var(--color-secondary-green);
+}
+
+.qa-rail__title {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-off-white);
+}
+
+.qa-rail__text {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: rgba(244, 246, 241, 0.72);
+  max-width: 22ch;
+}
+
+/* Legacy node styles kept for construction-chemicals route-flow */
 .qa-process__flow {
   display: grid;
   gap: var(--space-3);
@@ -501,13 +590,17 @@
     grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
     align-items: stretch;
   }
+
+  .qa-process__flow.route-flow {
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+  }
 }
 
 .qa-node {
   padding: var(--space-5);
   border: 1px solid var(--color-border);
-  background: var(--color-off-white);
-  text-align: center;
+  background: var(--color-white);
+  text-align: start;
 }
 
 .qa-node__title {
@@ -540,6 +633,10 @@
 
 [dir="rtl"] .qa-arrow {
   transform: scaleX(-1);
+}
+
+[dir="rtl"] .qa-rail__text {
+  max-width: 28ch;
 }
 
 /* â€”â€” Manufacturing development â€”â€” */

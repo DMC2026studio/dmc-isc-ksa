@@ -333,8 +333,13 @@
 }
 
 .qa-process .section-header__title {
-  font-size: var(--text-xl);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
+
+.qa-rail__step:hover {
+  background: rgba(244, 246, 241, 0.04);
+}
+
 
 .cluster--spaced {
   margin-top: var(--space-5);
