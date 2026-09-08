@@ -969,7 +969,7 @@
   z-index: 2;
   width: 100%;
   padding-block: var(--space-8) var(--space-7);
-  /* Width + side inset come from .page-hero__content.container (80px gutters) */
+  /* Width + side inset come from .page-hero__content.container (120px gutters) */
   max-width: none;
 }
 
