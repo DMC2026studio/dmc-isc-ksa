@@ -177,60 +177,6 @@
     font-size: 0.75rem;
   }
 
-  /* CTA primary → language secondary under it (compact, industrial) */
-  .site-header__actions {
-    flex-shrink: 0;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 0.5rem; /* 8px — touch/visual rhythm */
-  }
-
-  .site-header__cta {
-    order: 1;
-    width: auto;
-    min-height: 2.5rem;
-    padding-inline: 1rem;
-    letter-spacing: 0.02em;
-    white-space: nowrap;
-  }
-
-  .site-header__actions .lang-switch {
-    order: 2;
-    display: inline-flex;
-    align-items: stretch;
-    justify-content: center;
-    width: auto;
-    gap: 0;
-    padding: 0;
-    border: 1px solid var(--color-border);
-    background: var(--color-off-white);
-  }
-
-  .site-header__actions .lang-switch a {
-    min-width: 2.75rem;
-    min-height: 1.75rem;
-    padding: 0.2rem 0.55rem;
-    font-size: 0.6875rem;
-    letter-spacing: 0.06em;
-    border-radius: 0;
-    color: var(--color-medium-grey);
-  }
-
-  .site-header__actions .lang-switch a[aria-current="true"] {
-    color: var(--color-primary-green);
-    background: var(--color-green-50);
-  }
-
-  .site-header__actions .lang-switch a:hover {
-    color: var(--color-primary-green);
-    background: var(--color-green-50);
-  }
-
-  .site-header__actions .lang-switch__sep {
-    display: none;
-  }
-
   .logo img {
     height: 3.15rem;
   }
@@ -330,6 +276,64 @@
   display: flex;
   align-items: center;
   gap: var(--space-3);
+}
+
+/* Desktop: RFQ on top, language directly under it (must come AFTER base rule) */
+@media (min-width: 1024px) {
+  .site-header__actions {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .site-header__cta {
+    order: 1;
+    width: auto;
+    min-height: 2.4rem;
+    padding-inline: 1rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  .site-header__actions > .lang-switch {
+    order: 2;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    max-width: 100%;
+    gap: 0;
+    margin: 0;
+    border: 1px solid var(--color-border);
+    background: #fff;
+  }
+
+  .site-header__actions > .lang-switch a {
+    flex: 1;
+    min-width: 0;
+    min-height: 1.6rem;
+    padding: 0.15rem 0.4rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.04em;
+    border-radius: 0;
+    color: var(--color-medium-grey);
+  }
+
+  .site-header__actions > .lang-switch a[aria-current="true"],
+  .site-header__actions > .lang-switch a:hover {
+    color: var(--color-primary-green);
+    background: var(--color-green-50);
+  }
+
+  .site-header__actions > .lang-switch .lang-switch__sep {
+    display: none !important;
+  }
+
+  .site-header__actions > .nav-toggle {
+    display: none;
+  }
 }
 
 .lang-switch {

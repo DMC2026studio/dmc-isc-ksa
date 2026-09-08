@@ -104,8 +104,8 @@
   --container-narrow: 42rem;
   --gutter: clamp(1.25rem, 4vw, 2rem);
   --hero-gutter: var(--gutter); /* heroes share the same column */
-  --header-height: 6rem;
-  --header-height-sticky: 5.5rem;
+  --header-height: 5.75rem;
+  --header-height-sticky: 5.25rem;
 
   /* Radius — restrained */
   --radius-none: 0;
