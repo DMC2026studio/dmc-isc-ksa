@@ -132,85 +132,26 @@
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
   flex-shrink: 0;
   text-decoration: none;
-  min-width: 0;
-  max-width: min(22rem, 48vw);
 }
 
-.logo__mark {
-  height: 2.75rem;
+.logo img {
+  height: 3.25rem;
   width: auto;
-  flex-shrink: 0;
+  max-width: min(14rem, 52vw);
+  object-fit: contain;
   display: block;
 }
 
-.logo__text {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  flex-wrap: nowrap;
-  gap: 0.55rem;
-  min-width: 0;
-  line-height: 1.2;
-}
-
-.logo__name {
-  font-size: 0.78rem;
-  font-weight: var(--font-bold);
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--color-industrial-navy);
-  white-space: nowrap;
-}
-
-.logo__name-ar {
-  font-family: var(--font-arabic);
-  font-size: 0.72rem;
-  font-weight: var(--font-semibold);
-  color: var(--color-primary-green);
-  white-space: nowrap;
-}
-
-.site-header.is-scrolled .logo__mark {
-  height: 2.35rem;
-}
-
-.site-footer .logo {
-  max-width: min(24rem, 90%);
-}
-
-.site-footer .logo__mark {
-  height: 2.5rem;
-}
-
-.site-footer .logo__name {
-  color: var(--color-off-white);
-}
-
-.site-footer .logo__name-ar {
-  color: rgba(244, 246, 241, 0.82);
-}
-
-@media (max-width: 1100px) {
-  .logo__name-ar {
-    display: none;
-  }
+.site-header.is-scrolled .logo img {
+  height: 2.85rem;
 }
 
 @media (max-width: 480px) {
-  .site-header .logo {
-    max-width: none;
-    gap: 0;
-  }
-
-  .site-header .logo__text {
-    display: none;
-  }
-
-  .site-header .logo__mark {
+  .site-header .logo img {
     height: 2.5rem;
+    max-width: min(11rem, 58vw);
   }
 }
 
@@ -237,23 +178,35 @@
 
   .site-header__actions {
     flex-shrink: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+  }
+
+  .site-header__actions .lang-switch {
+    order: 2;
+    justify-content: center;
+    width: 100%;
   }
 
   .site-header__cta {
+    order: 1;
     letter-spacing: 0.01em;
+    width: 100%;
+    justify-content: center;
   }
 
-  .logo__mark {
+  .logo img {
     height: 3.15rem;
   }
 
-  .site-header.is-scrolled .logo__mark {
+  .site-header.is-scrolled .logo img {
     height: 2.75rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .logo__mark {
+  .logo img {
     height: 3.35rem;
   }
 
@@ -987,8 +940,8 @@ body.nav-open {
   border-radius: 0;
 }
 
-.footer__brand .logo__mark {
-  height: 2.5rem;
+.footer__brand .logo img {
+  height: 3.25rem;
   width: auto;
   display: block;
 }
